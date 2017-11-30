@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Styles/Login.css" rel="stylesheet" />
+ </head>
+<body>
+    <div id="lista" align="center">
+        <h1>Login to Site</h1>
+        <div id="cabecera">
+            <img src="~/Imagenes/imgLogo.png" />
+        </div>
+              <table>             
+                            <tr>                               
+                                <td><input id="txtUsuario" type="text" class="Requerido" data-name="Usuario" value="" placeholder="Correo"/></td>
+                            </tr>
+                            <tr>                               
+                                <td><input id="txtClave" type="password" class="Requerido" data-name="Clave" value="" placeholder="Password"/></td>
+                            </tr>
+                            <tr>                               
+                                <td colspan="2">
+                                    <canvas id="canvas" width="200" height="80"></canvas>
+                                </td>
+                            </tr>
+                            <tr>                               
+                                <td colspan="2"><a id="aActualizarCaptcha" href="#"><font color="#fff"> Actualizar Captcha</font></a></td>
+                            </tr>
+                            <tr>                                
+                                <td align="center"><input id="txtCodigo" type="text" style="width:150px" maxlength="5" class="Captcha" data-name="Código del Captcha" placeholder="Captcha"/></td>
+                            </tr>
+                            <tr>
+                                 <!--<td colspan="2" style="text-align:left"> -->
+                                <td colspan="2">
+                                    <input id="btnAceptar" type="button" value="Aceptar" class="Boton" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><span id="spnValida" class="Mensaje"></span></td>
+                            </tr>
+                 </table>
+    </div>
+
+    <input id="hdfOriginal" type="hidden" value="@ViewBag.Original" />
+    <input id="hdfCodigo" type="hidden" value="@ViewBag.Codigo" />
+    <input id="hdfUrlRaiz" type="hidden" value='@Url.Content("~")' />
+    <script src="~/Scripts/Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Nicol</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">            
+            <div class="navbar-header">                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>                
+                @* @Html.ActionLink("Salon de Belleza Nicol", "Index", "Home", null, new { @class = "navbar-brand" })  *@
+                <img src="@Url.Content("~/Imagenes/imgLogo.png")" width="230px" height="80px" alt="imgf" /> 
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                                       
+                    <li class="dropdown open" >
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Registrar<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Servicio", "Servicio", "Home")</li>
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Citas", "Citas", "Home")</li>
+                    <li>@Html.ActionLink("Promociones", "Promociones", "Home")</li>
+                    <li>@Html.ActionLink("Eventos", "Eventos", "Home")</li>
+
+                    <li>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Mantenimiento<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Cliente", "Cliente", "Home")</li>
+                            <li>@Html.ActionLink("Producto", "Producto", "Home")</li>
+                            <li>@Html.ActionLink("Proveedor", "Proveedor", "Home")</li>
+                            <li>@Html.ActionLink("Servicio", "Servicio", "Home")</li>
+                            <li>@Html.ActionLink("Trabajador", "Trabajador", "Home")</li>
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Salon de Belleza Nicol</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBNicol", "SBNicol\SBNicol.csproj", "{EF30D392-D331-4DAA-BEE1-185FE03FA2AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General.Librerias.CodigoUsuario", "..\Librerias\General.Librerias.CodigoUsuario\General.Librerias.CodigoUsuario.csproj", "{F9288846-06C2-44A3-B1BE-4C385B21B0A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF30D392-D331-4DAA-BEE1-185FE03FA2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF30D392-D331-4DAA-BEE1-185FE03FA2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF30D392-D331-4DAA-BEE1-185FE03FA2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF30D392-D331-4DAA-BEE1-185FE03FA2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9288846-06C2-44A3-B1BE-4C385B21B0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9288846-06C2-44A3-B1BE-4C385B21B0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9288846-06C2-44A3-B1BE-4C385B21B0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9288846-06C2-44A3-B1BE-4C385B21B0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
