@@ -6,7 +6,7 @@
 body {
    background:linear-gradient(
                 220deg,
-                blue,
+                darkSlateGray,
                 rgba(229,229,230,.8));
    min-height: 100vh;
 }
